@@ -967,6 +967,10 @@ class CalendarDelegate(binding: ActivityPluginBinding?, context: Context) :
             RruleFreq.MONTHLY -> RruleFreq.MONTHLY
             RruleFreq.WEEKLY -> RruleFreq.WEEKLY
             RruleFreq.DAILY -> RruleFreq.DAILY
+            RruleFreq.DAILY -> RruleFreq.DAILY
+            RruleFreq.HOURLY -> RruleFreq.HOURLY
+            RruleFreq.MINUTELY -> RruleFreq.MINUTELY
+            RruleFreq.SECONDLY -> RruleFreq.SECONDLY
             else -> null
         } ?: return null
         //Avoid handling HOURLY/MINUTELY/SECONDLY frequencies for now
@@ -1170,6 +1174,10 @@ class CalendarDelegate(binding: ActivityPluginBinding?, context: Context) :
             RruleFreq.WEEKLY -> RruleFreq.WEEKLY
             RruleFreq.MONTHLY -> RruleFreq.MONTHLY
             RruleFreq.YEARLY -> RruleFreq.YEARLY
+            RruleFreq.DAILY -> RruleFreq.DAILY
+            RruleFreq.HOURLY -> RruleFreq.HOURLY
+            RruleFreq.MINUTELY -> RruleFreq.MINUTELY
+            RruleFreq.SECONDLY -> RruleFreq.SECONDLY
             else -> null
         } ?: return null
 

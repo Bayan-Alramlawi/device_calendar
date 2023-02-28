@@ -577,9 +577,9 @@ class _CalendarEventPageState extends State<CalendarEventPage> {
                             },
                             value: _rrule?.frequency,
                             items: [
-                              // Frequency.secondly,
-                              // Frequency.minutely,
-                              // Frequency.hourly,
+                              Frequency.secondly,
+                              Frequency.minutely,
+                              Frequency.hourly,
                               Frequency.daily,
                               Frequency.weekly,
                               Frequency.monthly,
